@@ -1,0 +1,12 @@
+Project Peer Review
+By: Darian Martos
+SUID: dtmartos
+Class: C.S. 221
+
+All posters I saw were during Session A:
+
+One poster I saw was about robot generated music, using machine learning, as done by Justin Xu, Sicheng Zeng, and Han Lin Aung. It was a super innovative project, and while I did not understand the machine learning methods as well it was a cool concept that I felt was very different from other projects.
+Another poster I saw was a label classification project on academic papers, as done by Janel Lee, James Li, and Jenny Kim. Their poster board was one of the cleanest and most in depth boards i’ve seen, and the analysis they had with their ML and neural network was super clean, and the concept was well done.
+One of my favorite posters was dancing with deep learning, done by Cary Huang, Connie Xiao, and Cindy Jiang. This was one of the coolest ideas, and it was a super cool application of neural networks to generating dancing.
+
+Another worthy mention: Texas Hold ‘Em with deep RL was a really cool (and effective!) application of reinforcement learning, one of my favorite concepts, for what seems to be a complicated game.

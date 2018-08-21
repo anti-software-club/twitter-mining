@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['State', 'Number of Politicians'],
+          ['Alabama', 1],
+          ['Alaska', 1],
+          ['Arizona', 2],
+          ['Arkansas', 1],
+          ['California', 4],
+          ['Colorado', 1],
+          ['Connecticut', 3],
+          ['Delaware', 1],
+          ['District of Columbia', 1],
+          ['Florida', 1],
+          ['Idaho', 1],
+          ['Illinois', 4],
+          ['Indiana', 1],
+          ['Kentucky', 1],
+          ['Louisiana', 1],
+          ['Maryland', 1],
+          ['Maine', 2],
+          ['Michigan', 2],
+          ['Minnesota', 3],
+          ['Missouri', 2],
+          ['Mississippi', 1],
+          ['North Carolina', 1],
+          ['North Dakota', 1],
+          ['New Hampshire', 1],
+          ['New Jersey', 2],
+          ['New Mexico', 1],
+          ['New York', 3],
+          ['Ohio', 2],
+          ['Oregon', 2],
+          ['Pennsylvania', 3],
+          ['Rhode Island', 1],
+          ['South Carolina', 1],
+          ['Tennessee', 3],
+          ['Texas', 5],
+          ['Utah', 1],
+          ['Virgina', 1],
+          ['Vermont', 1],
+          ['Washington', 3],
+          ['Wisconsin', 2],
+          ['Wyoming', 1]
+        ]);
+
+        var options = {
+          region: 'US',
+          resolution: 'provinces', 
+          colorAxis: {colors: ['green', 'blue']}
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
